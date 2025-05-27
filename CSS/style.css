@@ -1,0 +1,34 @@
+/* ===== Start Variables ===== */
+
+:root {
+
+    /* --- Font --- */
+    --main-font: "Roboto", sans-serif;
+    --second-font: "Source Sans 3", sans-serif;
+
+    /* --- Colors --- */
+    --main-color: #ff305b;
+    --sec-bg-color: #f1f1f1;
+    --head-color: #333;
+    --txt-color: #555555;
+
+    /* ---- Other ---- */
+    --sec-py: 100px 0px;
+
+}
+
+/* ===== End Variables ===== */
+
+
+/* ===== Start Global Rukes ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== End Global Rukes ===== */
+
