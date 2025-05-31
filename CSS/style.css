@@ -11,6 +11,7 @@
     --sec-bg-color: #f1f1f1;
     --head-color: #333;
     --txt-color: #555555;
+    --model-card-txt-color: rgb(255, 48, 91);
 
     /* ---- Other ---- */
     --sec-py: 100px;
@@ -193,13 +194,50 @@ textarea {
 }
 
 #about #about-img {
+    width: 100%;
+    border: 3px solid var(--txt-color);
     border-radius: 3px;
 }
 
-#about #about-img img {
-    width: 320px;
-    transform: translate(10px, 10px);
+#about .overlay {
+    left: 9px;
+    bottom: -9px;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(0 0 0 / 55%);
     border-radius: 3px;
+    z-index: 100;
+    transition: height var(--transition);
+}
+
+#about #about-img:hover .overlay {
+    height: 100%;
+}
+
+#about .overlay #social-links {
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    transition: 0.3s 0.1s;
+    opacity: 0;
+}
+
+#about #about-img:hover #social-links {
+    opacity: 1;
+}
+
+#about .overlay #social-links .icon i {
+    transition: var(--transition);
+}
+
+#about .overlay #social-links .icon:hover i {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+#about #about-img img {
+    width: 100%;
+    border-radius: 3px;
+    transform: translate(10px, 10px);
 }
 
 #about #about-head {
@@ -230,23 +268,11 @@ textarea {
 
 #about #data .data-set-btns .btn {
     background-color: var(--main-color);
+    transition: var(--transition);
 }
 
-
-@media (min-width: 768px) {
-    #about #about-img {
-        border: 4px solid var(--txt-color);
-    }
-
-    #about #about-img img {
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    #about #about-img {
-        transform: translate(15px, 15px);
-    }    
+#about #data .data-set-btns .btn:hover {
+    background-color: red;
 }
 
 @media (min-width: 1200px) {
@@ -313,8 +339,61 @@ textarea {
     color: var(--main-color);
 }
 
+#portfolio .btn-primary {
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+}
+
+#portfolio .btn {
+    padding: 0px;
+}
+
+#portfolio .modal .modal-header,
+#portfolio .modal .modal-body .pro-info-data .icon,
+#portfolio .modal .modal-body .pro-info-data:nth-child(2) .txt {
+    color: var(--model-card-txt-color);
+}
+
+#portfolio .modal .modal-body .model-body-txt {
+    color: var(--txt-color);
+}
+
+#portfolio .modal .modal-body .pro-info-data .icon {
+    width: 15px;
+    font-size: 14px;
+    margin-right: 1px;
+}
+
+#portfolio .modal .modal-body .pro-info-data .txt {
+    font-size: 14px;
+    color: var(--txt-color);
+}
+
+#portfolio .modal .modal-footer .model-footer-head {
+    color: var(--head-color);
+}
+
+#portfolio .modal .modal-footer .social {
+    color: var(--txt-color);
+}
+
+#portfolio .modal .modal-footer .social .icon {
+    transition: var(--transition);
+    margin-right: 10px;
+}
+
+#portfolio .modal .modal-footer .social .icon:hover i {
+    cursor: pointer;
+    color: var(--model-card-txt-color);
+}
+
 #portfolio .card figure .overlay {
     background-color: #0000005c;
+    border-radius: 3px;
     transition: var(--transition);
     opacity: 0;
     z-index: 0;
@@ -388,8 +467,8 @@ textarea {
 }
 
 #feedback .carousel-indicators [data-bs-target] {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: var(--main-color);
 }
@@ -443,6 +522,13 @@ textarea {
     max-height: 100px;
 }
 
+#contact form input:focus,
+#contact form textarea:focus {
+    border: 1px solid var(--main-color);
+    box-shadow: none;
+    position: relative;
+}
+
 /* ===== End Contact ===== */
 
 
@@ -453,11 +539,11 @@ textarea {
     background-color: var(--head-color);
 }
 
-#footer #social i {
+#footer .social i {
     transition: var(--transition);
 }
 
-#footer #social i:hover {
+#footer .social i:hover {
     cursor: pointer;
     color: var(--main-color);
 }

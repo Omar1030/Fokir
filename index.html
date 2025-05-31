@@ -17,7 +17,10 @@
         <link rel="stylesheet" href="CSS/bootstrap.min.css">
         
         <!-- ===== Main CSS ===== -->
-        <link rel="stylesheet" href="CSS/style.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- ===== Main Minify CSS ===== -->
+        <!-- <link rel="stylesheet" href="CSS/style.min.css"> -->
     </head>
     <body>
         
@@ -90,8 +93,18 @@
 
                         <div class="col-12 col-md-4 col-lg-4">
 
-                            <figure id="about-img" class="text-center">
-                                <img src="img/work-7.jpg" alt="about-img" class="" loading="lazy">
+                            <figure id="about-img" class="position-relative">
+                                <div class="overlay position-absolute">
+
+                                    <ul id="social-links" class="list-unstyled fs-4 text-light d-flex column-gap-3 position-absolute top-50 start-50">
+                                        <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                        <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                        <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                        <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                    </ul>
+
+                                </div>
+                                <img src="img/work-7.jpg" alt="about-img" loading="lazy">
                             </figure>
 
                         </div>
@@ -105,39 +118,27 @@
                             <div id="data" class="row">
 
                                 <div class="data-set col-12 col-md-6">
-
                                     <p class="data-set-txt"><span class="me-1 fw-medium head-color">Name:</span>Rdam smith</p>
-
                                 </div>
 
                                 <div class="data-set col-12 col-md-6">
-
                                     <p class="data-set-txt"><span class="me-1 fw-medium head-color">Age:</span>26 Years</p>
-
                                 </div>
 
                                 <div class="data-set col-12 col-md-6">
-
                                     <p class="data-set-txt"><span class="me-1 fw-medium head-color">Freelance:</span>Availabel</p>
-
                                 </div>
 
                                 <div class="data-set col-12 col-md-6">
-
                                     <p class="data-set-txt"><span class="me-1 fw-medium head-color">Job Title:</span>UI/UX Designer</p>
-
                                 </div>
 
                                 <div class="data-set col-12 col-md-6">
-
                                     <p class="data-set-txt"><span class="me-1 fw-medium head-color">Location:</span>United States, US</p>
-
                                 </div>
 
                                 <div class="data-set col-12 col-md-6">
-
                                     <p class="data-set-txt"><span class="me-1 fw-medium head-color">E-mail:</span>smith@gmail.com</p>
-
                                 </div>
 
                                 <div class="data-set-btns col-12 mt-2">
@@ -180,10 +181,10 @@
 
                         <div class="col-12 col-md-6 col-xl-3">
 
-                            <div class="card text-center">
-                                <div class="icon"><i class="fa-solid fa-pen-ruler fs-2 pt-3"></i></div>
+                            <div class="card text-center p-1">
+                                <div class="icon"><i class="fa-solid fa-pen-ruler fs-2 pt-2"></i></div>
                                 <div class="card-body">
-                                    <h3 class="card-title mb-3">UI/UX DESIGN</h3>
+                                    <h4 class="card-title mb-2">UI/UX DESIGN</h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
                                 </div>
                             </div>
@@ -191,30 +192,30 @@
                         </div>
 
                         <div class="col-12 col-md-6 col-xl-3">
-                            <div class="card text-center">
-                                <div class="icon"><i class="fa-solid fa-laptop-code fs-2 pt-3"></i></div>
+                            <div class="card text-center p-1">
+                                <div class="icon"><i class="fa-solid fa-laptop-code fs-2 pt-2"></i></div>
                                 <div class="card-body">
-                                    <h3 class="card-title mb-3">APP DEVELOPMENT</h3>
+                                    <h4 class="card-title mb-2">APP DEVELOPMENT</h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-md-6 col-xl-3">
-                            <div class="card text-center">
-                                <div class="icon"><i class="fa-solid fa-object-ungroup fs-2 pt-3"></i></div>
+                            <div class="card text-center p-1">
+                                <div class="icon"><i class="fa-solid fa-object-ungroup fs-2 pt-2"></i></div>
                                 <div class="card-body">
-                                    <h3 class="card-title mb-3">PRODUCT DESIGN</h3>
+                                    <h4 class="card-title mb-2">PRODUCT DESIGN</h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-12 col-md-6 col-xl-3">
-                            <div class="card text-center">
-                                <div class="icon"><i class="fa-solid fa-gears fs-2 pt-3"></i></div>
+                            <div class="card text-center p-1">
+                                <div class="icon"><i class="fa-solid fa-gears fs-2 pt-2"></i></div>
                                 <div class="card-body">
-                                    <h3 class="card-title mb-3">PRODUCT DESIGN</h3>
+                                    <h4 class="card-title mb-2">PRODUCT DESIGN</h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
                                 </div>
                             </div>
@@ -246,81 +247,7 @@
                         <li>BRANDING</li>
                     </ul>
 
-                    <div class="row">
-
-                        <div class="col-12 col-md-6 col-lg-4">
-
-                            <div class="card">
-                                <figure class="project-img position-relative">
-                                    <div class="overlay position-absolute w-100 h-100"></div>
-                                    <img src="img/1.jpg" class="card-img-top" alt="clock-img" loading="lazy">
-                                </figure>
-                                <i class="fa-solid fa-image position-absolute fs-5"></i>
-                            </div>
-
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 ">
-
-                            <div class="card">
-                                <figure class="project-img position-relative">
-                                    <div class="overlay position-absolute w-100 h-100"></div>
-                                    <img src="img/2.jpg" class="card-img-top" alt="clock-img" loading="lazy">
-                                </figure>
-                                <i class="fa-solid fa-image position-absolute fs-5"></i>
-                            </div>
-
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4">
-
-                            <div class="card">
-                                <figure class="project-img position-relative">
-                                    <div class="overlay position-absolute w-100 h-100"></div>
-                                    <img src="img/3.jpg" class="card-img-top" alt="clock-img" loading="lazy">
-                                </figure>
-                                <i class="fa-solid fa-image position-absolute fs-5"></i>
-                            </div>
-
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4">
-
-                            <div class="card">
-                                <figure class="project-img position-relative">
-                                    <div class="overlay position-absolute w-100 h-100"></div>
-                                    <img src="img/4.jpg" class="card-img-top" alt="clock-img" loading="lazy">
-                                </figure>
-                                <i class="fa-solid fa-image position-absolute fs-5"></i>
-                            </div>
-
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4">
-
-                            <div class="card">
-                                <figure class="project-img position-relative">
-                                    <div class="overlay position-absolute w-100 h-100"></div>
-                                    <img src="img/5.jpg" class="card-img-top" alt="clock-img" loading="lazy">
-                                </figure>
-                                <i class="fa-solid fa-image position-absolute fs-5"></i>
-                            </div>
-
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4">
-
-                            <div class="card">
-                                <figure class="project-img position-relative">
-                                    <div class="overlay position-absolute w-100 h-100"></div>
-                                    <img src="img/6.jpg" class="card-img-top" alt="clock-img" loading="lazy">
-                                </figure>
-                                <i class="fa-solid fa-image position-absolute fs-5"></i>
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <div class="row" id="portfolioRow"></div>
 
                 </div>
             </section>
@@ -483,7 +410,7 @@
                         <div class="col-12 col-md-5 col-lg-4">
 
                             <div class="card">
-                                <img src="img/blog-2.jpg" class="card-img-top" alt="blog-img" loading="lazy">
+                                <img src="img/blog-1.jpg" class="card-img-top" alt="blog-img" loading="lazy">
                                 <div class="card-body">
                                     <time datetime="2025-11-23" class="d-block mb-2">23 November, 2025</time>
                                     <h3 class="card-title">Web Design Blog Post</h3>
@@ -500,7 +427,7 @@
                         <div class="col-12 col-md-5 col-lg-4">
 
                             <div class="card">
-                                <img src="img/blog-1.jpg" class="card-img-top" alt="blog-img" loading="lazy">
+                                <img src="img/blog-2.jpg" class="card-img-top" alt="blog-img" loading="lazy">
                                 <div class="card-body">
                                     <time datetime="2025-15-15" class="d-block mb-2">15 August, 2025</time>
                                     <h3 class="card-title">Development Post</h3>
@@ -517,7 +444,7 @@
                         <div class="col-12 col-md-5 col-lg-4">
 
                             <div class="card">
-                                <img src="img/blog-1.jpg" class="card-img-top" alt="blog-img" loading="lazy">
+                                <img src="img/blog-3.jpg" class="card-img-top" alt="blog-img" loading="lazy">
                                 <div class="card-body">
                                     <time datetime="2025-3-17" class="d-block mb-2">17 March, 2025</time>
                                     <h3 class="card-title">Full Width Blog Post</h3>
@@ -554,19 +481,28 @@
 
                             <div class="row justify-content-center row-gap-3">
                                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                                    <input type="text" name="name" placeholder="Name" class="w-100 rounded-1 p-2">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control py-2" placeholder="Name" name="name" aria-label="name" required>
+                                    </div>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                                    <input type="email" name="email" placeholder="Email" class="w-100 rounded-1 p-2">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control py-2" placeholder="Email" name="email" aria-label="email" required>
+                                    </div>
                                 </div>
 
                                 <div class="col-12 col-lg-10 col-xl-8">
-                                    <input type="text" name="subject" placeholder="Subject" class="w-100 rounded-1 p-2">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control py-2" placeholder="Subject" name="subject" aria-label="subject" required>
+                                    </div>
                                 </div>
 
                                 <div class="col-12 col-lg-10 col-xl-8">
-                                    <textarea name="message" name="message" placeholder="Message for me" class="w-100 rounded-1 p-2"></textarea>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="message"></textarea>
+                                        <label for="floatingTextarea">Message for me</label>
+                                    </div>
                                 </div>
 
                                 <div class="col-12 col-lg-10 col-xl-8 text-start">
@@ -590,7 +526,7 @@
             <section id="footer">
                 <div class="container d-flex flex-column justify-content-center align-items-center">
 
-                    <ul id="social" class="list-unstyled d-flex column-gap-3 text-light">
+                    <ul class="social list-unstyled d-flex column-gap-3 text-light">
                         <li><i class="fa-brands fa-facebook-f fs-5"></i></li>
                         <li><i class="fa-brands fa-twitter fs-5"></i></li>
                         <li><i class="fa-brands fa-google fs-5"></i></li>
@@ -610,5 +546,6 @@
 
         <script src="JS/bootstrap.bundle.min.js"></script>
         <script src="JS/dynamic.js"></script>
+        <!-- <script src="JS/dynamic.min.js"></script> -->
     </body>
 </html>
