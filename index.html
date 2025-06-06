@@ -240,14 +240,999 @@
                         <span class="head-line d-block position-absolute start-50"></span>
                     </h2>
 
-                    <ul id="menu" class="list-unstyled d-flex justify-content-center column-gap-3 mb-5">
+                    <!-- <ul id="menu" class="list-unstyled d-flex justify-content-center column-gap-3 mb-5">
                         <li>ALL</li>
                         <li>GRAPHIC</li>
                         <li>WEB DESIGN</li>
                         <li>BRANDING</li>
+                    </ul> -->
+
+                    <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-home" aria-selected="true">ALL</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-graphic" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">GRAPHIC</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-webDesighn-tab" data-bs-toggle="pill" data-bs-target="#pills-webDesighn" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">WEB DESIGN</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-branding-tab" data-bs-toggle="pill" data-bs-target="#pills-branding" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">BRANDING</button>
+                        </li>
                     </ul>
 
-                    <div class="row" id="portfolioRow"></div>
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+
+                            <div class="row" id="portfolioRow">
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelOne">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/1.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelOne" tabindex="-1" aria-labelledby="exampleModalLabelOne" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelOne">Project One</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/1.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelTwo">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/2.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelTwo" tabindex="-1" aria-labelledby="exampleModalLabelTwo" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelTwo">Project Two</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/2.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelThree">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/3.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelThree" tabindex="-1" aria-labelledby="exampleModalLabelThree" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelThree">Project Three</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/3.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelFour">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/4.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelFour" tabindex="-1" aria-labelledby="exampleModalLabelFour" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelFour">Project Four</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/4.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelFive">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/5.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelFive" tabindex="-1" aria-labelledby="exampleModalLabelFive" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelFive">Project Five</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/5.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelSix">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/6.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelSix" tabindex="-1" aria-labelledby="exampleModalLabelSix" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelSix">Project Six</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/6.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-graphic" role="tabpanel" aria-labelledby="pills-graphic-tab" tabindex="1">
+
+                            <div class="row" id="portfolioRow">
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelSeven">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/2.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelSeven" tabindex="-1" aria-labelledby="exampleModalLabelSeven" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelSeven">Project One</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/2.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelEight">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/3.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelEight" tabindex="-1" aria-labelledby="exampleModalLabelEight" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelEight">Project Three</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/3.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelNine">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/4.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelNine" tabindex="-1" aria-labelledby="exampleModalLabelNine" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelNine">Project Four</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/4.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelTen">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/5.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelTen" tabindex="-1" aria-labelledby="exampleModalLabelTen" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelTen">Project Five</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/5.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-webDesighn" role="tabpanel" aria-labelledby="pills-webDesighn-tab" tabindex="2">
+
+                            <div class="row" id="portfolioRow">
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelEleven">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/4.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelEleven" tabindex="-1" aria-labelledby="exampleModalLabelEleven" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelEleven">Project Four</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/4.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelTwelve">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/5.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelTwelve" tabindex="-1" aria-labelledby="exampleModalLabelTwelve" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelTwelve">Project Five</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/5.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelThirteen">
+                                
+                                    <div class="card">
+                                        <figure class="project-img position-relative">
+                                            <div class="overlay position-absolute w-100 h-100"></div>
+                                            <img src="img/6.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                        </figure>
+                                        <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                    </div>
+                                    
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLabelThirteen" tabindex="-1" aria-labelledby="exampleModalLabelThirteen" aria-hidden="true">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabelSix">Project Six</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="img/6.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                <ul class="project-info list-unstyled">
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-user"></i>
+                                                        <span class="txt">Alex Smith</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-earth-americas"></i>
+                                                        <span class="txt">www.example.com</span>
+                                                    </li>
+                                                    <li class="pro-info-data">
+                                                        <i class="icon fa-solid fa-calendar-days"></i>
+                                                        <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer flex-column align-items-start">
+                                                <h5 class="model-footer-head">Share</h5>
+                                                <ul class="social list-unstyled d-flex">
+                                                    <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                    <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-branding" role="tabpanel" aria-labelledby="pills-branding-tab" tabindex="3">
+
+                            <div class="row" id="portfolioRow">
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelFourteen">
+                                    
+                                        <div class="card">
+                                            <figure class="project-img position-relative">
+                                                <div class="overlay position-absolute w-100 h-100"></div>
+                                                <img src="img/1.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                            </figure>
+                                            <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                        </div>
+                                        
+                                    </button>
+            
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalLabelFourteen" tabindex="-1" aria-labelledby="exampleModalLabelFourteen" aria-hidden="true">
+                                        <div class="modal-dialog">
+
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabelFourteen">Project One</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <img src="img/1.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                    <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                    <ul class="project-info list-unstyled">
+                                                        <li class="pro-info-data">
+                                                            <i class="icon fa-solid fa-user"></i>
+                                                            <span class="txt">Alex Smith</span>
+                                                        </li>
+                                                        <li class="pro-info-data">
+                                                            <i class="icon fa-solid fa-earth-americas"></i>
+                                                            <span class="txt">www.example.com</span>
+                                                        </li>
+                                                        <li class="pro-info-data">
+                                                            <i class="icon fa-solid fa-calendar-days"></i>
+                                                            <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="modal-footer flex-column align-items-start">
+                                                    <h5 class="model-footer-head">Share</h5>
+                                                    <ul class="social list-unstyled d-flex">
+                                                        <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                        <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                        <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                        <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" id="btnModel" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLabelFifteen">
+                                    
+                                        <div class="card">
+                                            <figure class="project-img position-relative">
+                                                <div class="overlay position-absolute w-100 h-100"></div>
+                                                <img src="img/5.jpg" class="card-img-top" alt="clock-img" loading="lazy">
+                                            </figure>
+                                            <i class="fa-solid fa-image position-absolute fs-5"></i>
+                                        </div>
+                                        
+                                    </button>
+            
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalLabelFifteen" tabindex="-1" aria-labelledby="exampleModalLabelFifteen" aria-hidden="true">
+                                        <div class="modal-dialog">
+
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabelFifteen">Project Five</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <img src="img/5.jpg" class="card-img-top" loading="lazy" class="w-100 rounded-2">
+                                                    <p class="model-body-txt mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab perspiciatis et, voluptas esse ex expedita atque. Impedit porro eveniet, culpa rerum in doloremque velit perspiciatis doloribus ratione. Nobis, nisi, quasi.</p>
+                                                    <ul class="project-info list-unstyled">
+                                                        <li class="pro-info-data">
+                                                            <i class="icon fa-solid fa-user"></i>
+                                                            <span class="txt">Alex Smith</span>
+                                                        </li>
+                                                        <li class="pro-info-data">
+                                                            <i class="icon fa-solid fa-earth-americas"></i>
+                                                            <span class="txt">www.example.com</span>
+                                                        </li>
+                                                        <li class="pro-info-data">
+                                                            <i class="icon fa-solid fa-calendar-days"></i>
+                                                            <time datetime="2025-8-15" class="txt">15 August 2025</time>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="modal-footer flex-column align-items-start">
+                                                    <h5 class="model-footer-head">Share</h5>
+                                                    <ul class="social list-unstyled d-flex">
+                                                        <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+                                                        <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                                                        <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                        <li class="icon"><i class="fa-brands fa-github"></i></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+
+
+                    
 
                 </div>
             </section>
@@ -546,6 +1531,6 @@
 
         <script src="JS/bootstrap.bundle.min.js"></script>
         <!-- <script src="JS/dynamic.js"></script> -->
-        <script src="JS/dynamic.min.js"></script>
+        <!-- <script src="JS/dynamic.min.js"></script> -->
     </body>
 </html>
